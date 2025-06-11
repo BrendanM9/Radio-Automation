@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Automation</title>
+    </head>
+    <body>
+        <h1 id="clock"></h1>
+        <button id="start">START</button>
+        <audio id="60000">
+            <!--<source src="/static/music/60000.mp3" type="audio/mpeg">-->
+            <source src="/static/music/50208.mp3" type="audio/mpeg">
+        </audio>
+        <h3 style="color: blue" id="TOH Ramp">Top Of The Hour Ramp<br>Station Voice</h3>
+        <audio id="50208">
+            <!--<source src="/static/music/50208.mp3" type="audio/mpeg">-->
+            <source src="/static/music/50510.mp3" type="audio/mpeg">
+        </audio>
+        <h3 style="color: red" id="Alone">Alone<br>Heart</h3>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            var jsonData
+            function getJson(){
+                $.getJSON("/static/Test_Library.json", function(data) {
+                    jsonLoaded(data)
+                })
+            }
+            getJson()
+            function jsonLoaded(data1){
+                console.log(data1)
+                jsonData = data1
+            }
+            setInterval(getTime, 1000)
+            var hour
+            var minutes
+            var seconds
+            startButton = document.getElementById("start")
+            a60000 = document.getElementById("60000")
+            tohText = document.getElementById("TOH Ramp")
+            a50208 = document.getElementById("50208")
+            aloneText = document.getElementById("Alone")
+            var newTimeS
+            var newTimeM
+            function startLog(){
+                tohText.style.backgroundColor = "yellow";
+                a60000.play()
+                secondDifference = jsonData[2].crossfade_s
+                minuteDifference = jsonData[2].crossfade_m
+                newTimeS = seconds + secondDifference
+                newTimeM = minutes + minuteDifference
+                if(newTimeS >= 60){
+                    newTimeS -= 60
+                    newTimeM += 1
+                }
+
+
+            }
+            startButton.addEventListener("click", startLog)
+            function getTime() {
+                var d = new Date();
+                hour = d.getHours();
+                minutes = d.getMinutes();
+                if(minutes < 10){
+                    minuteStr = "0"+minutes
+                } else {
+                    minuteStr = minutes
+                }
+                seconds = d.getSeconds();
+                if(seconds < 10){
+                    secondStr = "0"+seconds
+                } else {
+                    secondStr = seconds
+                }
+                console.log(hour+":"+minutes+":"+seconds)
+                console.log(newTimeM+":"+newTimeS)
+                if(newTimeM+":"+newTimeS == minutes+":"+seconds){
+                    nextEvent()
+                }
+                document.getElementById("clock").innerHTML = hour+":"+minuteStr+":"+secondStr
+            }
+            function nextEvent(){
+                tohText.style.backgroundColor = "lightblue";
+                aloneText.style.backgroundColor = "yellow";
+                a50208.play()
+            }
+        </script>
+    </body>
+</html>
