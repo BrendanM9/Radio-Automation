@@ -1,0 +1,122 @@
+[
+    {
+        "cart": 60000,
+        "cut": 1,
+        "title": "Top Of The Hour Jingle",
+        "artist": "",
+        "length": "0:36",
+        "crossfade": "0:25",
+        "crossfade_s": 25,
+        "crossfade_m": 0
+    },
+    {
+        "cart": 50122,
+        "cut": 1,
+        "title": "The Chain",
+        "artist": "Fleetwood Mac",
+        "length": "4:30",
+        "crossfade": "4:18",
+        "crossfade_s": 4,
+        "crossfade_m": 18
+    },
+    {
+        "cart": 50208,
+        "cut": 1,
+        "title": "Alone",
+        "artist": "Heart",
+        "length": "3:39",
+        "crossfade": "3:31",
+        "crossfade_s": 31,
+        "crossfade_m": 3
+    },
+    {
+        "cart": 50210,
+        "cut": 1,
+        "title": "Missing You",
+        "artist": "John Waite",
+        "length": "4:30",
+        "crossfade": "4:18",
+        "crossfade_s": 4,
+        "crossfade_m": 18
+    },
+    {
+        "cart": 50304,
+        "cut": 1,
+        "title": "Modern Love",
+        "artist": "David Bowie",
+        "length": "4:48",
+        "crossfade": "4:34",
+        "crossfade_s": 4,
+        "crossfade_m": 34
+    },
+    {
+        "cart": 50319,
+        "cut": 1,
+        "title": "Somebody's Watching Me",
+        "artist": "Rockwell",
+        "length": "3:58",
+        "crossfade": "3:44",
+        "crossfade_s": 3,
+        "crossfade_m": 44
+    },
+    {
+        "cart": 50323,
+        "cut": 1,
+        "title": "Everything She Wants",
+        "artist": "Wham!",
+        "length": "6:30",
+        "crossfade": "6:25",
+        "crossfade_s": 6,
+        "crossfade_m": 25
+    },
+    {
+        "cart": 50416,
+        "cut": 1,
+        "title": "Jessie's Girl",
+        "artist": "Rick Springfield",
+        "length": "3:14",
+        "crossfade": "3:06",
+        "crossfade_s": 3,
+        "crossfade_m": 6
+    },
+    {
+        "cart": 50419,
+        "cut": 1,
+        "title": "Everybody Wants To Rule The World",
+        "artist": "Tears For Fears",
+        "length": "4:12",
+        "crossfade": "3:58",
+        "crossfade_s": 3,
+        "crossfade_m": 58
+    },
+    {
+        "cart": 50510,
+        "cut": 1,
+        "title": "Urgent",
+        "artist": "Foreigner",
+        "length": "4:31",
+        "crossfade": "4:18",
+        "crossfade_s": 4,
+        "crossfade_m": 18
+    },
+    {
+        "cart": 50616,
+        "cut": 1,
+        "title": "It's My Life",
+        "artist": "Talk Talk",
+        "length": "3:52",
+        "crossfade": "3:41",
+        "crossfade_s": 3,
+        "crossfade_m": 41
+    },
+    {
+        "cart": 50706,
+        "cut": 1,
+        "title": "Ordinary World",
+        "artist": "Duran Duran",
+        "length": "4:38",
+        "crossfade": "4:30",
+        "crossfade_s": 4,
+        "crossfade_m": 30
+    }
+]
